@@ -3,10 +3,7 @@
 </p>
 <% @posts.each do |post| %>
 <div class="">
-  <p>
-    <%= post.title %>
-    <br>
-  </p>
+  <h2 class="title"><%= link_to post.title, post %></h2>
   <p>Created at:
     <%= post.created_at %>
   </p>
