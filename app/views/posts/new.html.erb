@@ -1,0 +1,6 @@
+<h1>Create Post</h1>
+<%= simple_form_for @post do |f| %>
+  <%= f.input :title, error: 'Should be 5 or more characters' %><br>
+  <%= f.input :body,  error: 'Should be 10 or more characters' %><br>
+  <%= f.button :submit %>
+<% end %>
