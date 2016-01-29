@@ -26,7 +26,7 @@
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background-color: #f5f5f5;
+    background-color: #e8e8e8;
     border-right: 1px solid #eee;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -55,20 +55,20 @@
 		border-bottom: 1px solid #d6dce0;
 		background: #f5f7f9;
 		color: #9eafba;
+    li.nav-links{
+      float: right;
+      text-indent: 20px;
+    }
+    li {
+      display: inline-block;
+      text-decoration: none;
+    }
 		p {
 			display: inline;
 		}
 		a {
 			color: #9eafba;
 			text-decoration: none;
-		}
-		.buttons {
-			float: right;
-			margin-top: -6px;
-			.button {
-				font-size: .8em;
-				margin-left: .5em;
-			}
 		}
 	}
 .nopadding {
@@ -95,7 +95,7 @@
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999999;
+    color: #737373;
 }
 
 .sidebar-nav li a:hover {
@@ -116,7 +116,8 @@
 }
 
 .sidebar-nav > .sidebar-brand a {
-    color: #999999;
+    color: #737373;
+    font-size: 24px;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
