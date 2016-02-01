@@ -2,7 +2,7 @@
     <div class="row">
       <div class="col-sm-8 post-show">
         <h1 class="post-show-title"><%= @post.title %></h1>
-        <p class="post-show-body"> <%= @post.body %></p>
+        <p class="post-show-body"> <%=raw @post.body %></p>
         <p class="post-show-date">
           Submitted <%= time_ago_in_words(@post.created_at) %> Ago
           <% if user_signed_in? %>

@@ -12,7 +12,7 @@
           </p>
         </div>
         <p class="post-body">
-          <%= truncate(post.body, length: 60) %>
+          <%= raw post.body.truncate(50) %>
         </p>
       </div>
     </div>
