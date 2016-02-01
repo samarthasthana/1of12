@@ -1,16 +1,20 @@
-<% @posts.each do |post| %>
-<div class="post-section">
-  <h1 class="post-title"><%= link_to post.title, post %></h1>
-  <div class="post-labels">
-    <p><span class="post-label">Created on:</span>
-      <%= post.created_at.strftime("%v") %>
-    </p>
-    <p><span class="post-label">Created by:</span>
-      <%= post.user.email %>
-    </p>
-  </div>
-  <p class="post-body">
-    <%= truncate(post.body, length: 60) %>
-  </p>
+<div class="container-fluid">
+  <% @posts.each do |post| %>
+    <div class="row">
+      <div class="col-sm-12 post-section">
+        <h1 class="post-title"><%= link_to post.title, post %></h1>
+        <div class="post-labels">
+          <p><span class="post-label">Created on:</span>
+            <%= post.created_at.strftime("%v") %>
+          </p>
+          <p><span class="post-label">Created by:</span>
+            <%= post.user.email %>
+          </p>
+        </div>
+        <p class="post-body">
+          <%= truncate(post.body, length: 60) %>
+        </p>
+      </div>
+    </div>
+  <% end %>
 </div>
-<% end %>
