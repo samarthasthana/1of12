@@ -116,3 +116,10 @@ p.post-body {
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 }
+
+label.string.required, label.text.required {
+	font-size: 16px;
+	font-weight: 300;
+	padding-left: 1em;
+	padding-right: 2em;
+}

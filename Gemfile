@@ -23,6 +23,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '~> 3.5', '>= 3.5.5'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+gem 'kaminari', '~> 0.16.3'
 
 group :development, :test do
   gem 'byebug'

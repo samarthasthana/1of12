@@ -1,5 +1,19 @@
-<%= simple_form_for @post do |f| %>
-  <%= f.input :title, error: 'Should be 5 or more characters' %><br>
-  <%= f.input :body,  error: 'Should be 10 or more characters' %><br>
-  <%= f.button :submit %>
-<% end %>
+<body>
+  <div class="container-fluid">
+    <%= simple_form_for @post, :html=> { class: 'form-partial' } do |f| %>
+      <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+          <%= f.input :title, :label => "Title", error: 'Should be 5 or more characters' %><br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+          <%= f.input :body,  error: 'Should be 10 or more characters' %><br>
+        </div>
+      </div>
+      <%= f.button :submit %>
+    <% end %>
+  </div>
+</body>
