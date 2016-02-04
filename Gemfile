@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.2'
+ruby '2.1.1'
 # Use pg as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -24,6 +25,7 @@ gem 'devise', '~> 3.5', '>= 3.5.5'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'kaminari', '~> 0.16.3'
+gem 'rails_12factor', group: :production
 
 group :development, :test do
   gem 'byebug'
