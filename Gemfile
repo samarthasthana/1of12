@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.2'
-ruby '2.2.4'
+ruby '2.2.4', group: :production
 # Use pg as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -31,4 +31,5 @@ group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  ruby '2.2.0'
 end

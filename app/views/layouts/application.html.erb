@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TheBlg</title>
+  <title>CodeCourage</title>
+  <meta name="keywords" content="HTML, Code, Rails, Ruby, Samarth, Asthana" />
+  <meta name="description" content= "Personal blog of a Rails full stack developer sharing knowledge." />
+  <meta name="author" content="Samarth Asthana" />
+  <META name="ROBOTS" content="INDEX, FOLLOW">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
   <!-- <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %> -->
   <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Raleway:400,700' %>
   <%= javascript_include_tag "application" %>
@@ -36,15 +41,13 @@
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
           <li class="sidebar-brand">
-            <a href="#">
-                Code Courage
-            </a>
+            <%= link_to 'Code Courage', root_path, :class => 'navbar-link' %>
           </li>
           <li>
-            <%= link_to 'Blog', root_path, :class => 'navbar-link' %></a>
+            <%= link_to 'Blog', root_path, :class => 'navbar-link' %>
           </li>
           <li>
-            <%= link_to 'About', about_path, :class => 'navbar-link' %></a>
+            <%= link_to 'About', about_path, :class => 'navbar-link' %>
           </li>
           <!-- <li>
             <%= link_to 'Contact', about_path, :class => 'navbar-link' %></a>
@@ -70,7 +73,6 @@
           <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
           <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
           <% else %>
-            <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
             <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
           <% end %>
         </li>
